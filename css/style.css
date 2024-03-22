@@ -1,0 +1,518 @@
+        /* ******************* GENERIC STYLE ******************** */
+        /*Anim zone*/
+        
+        @keyframes laptop_submenu {
+            0% {
+                top: 0;
+                opacity: 0.2;
+            }
+            25% {
+                top: 18.75%;
+                opacity: 0.4;
+            }
+            50% {
+                top: 37.5%;
+                opacity: 0.6;
+            }
+            70% {
+                top: 56.25%;
+                opacity: 0.8;
+            }
+            80% {
+                top: 75%;
+                opacity: 0.9;
+            }
+            100% {
+                top: 93.75%;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes mobile_submenu {
+            0% {
+                opacity: 0.2;
+            }
+            25% {
+                opacity: 0.4;
+            }
+            50% {
+                opacity: 0.6;
+            }
+            70% {
+                opacity: 0.8;
+            }
+            80% {
+                opacity: 0.9;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        /*Overall*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 1em;
+            background-color: #f5f5f5;
+            color: #000000;
+        }
+        
+        header {
+            margin-bottom: 30px;
+        }
+        
+        main {
+            margin-left: 1em;
+        }
+        
+        aside {
+            margin-right: 30px;
+            float: right;
+            width: 20%;
+            display: block;
+        }
+        
+        footer,
+        footer a {
+            color: white;
+        }
+        
+        strong {
+            font-size: 1.1em;
+        }
+        
+        main img {
+            width: 70%;
+        }
+        
+        aside img {
+            width: 100%;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        main ul {
+            list-style-type: disc;
+        }
+        
+        main ul,
+        main ol {
+            padding-left: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: orangered;
+        }
+        
+        a:hover {
+            color: rgb(2, 14, 80);
+        }
+        
+        section,
+        aside {
+            padding: 10px;
+            box-shadow: 3px 3px 5px 6px #ccc;
+        }
+        
+        footer,
+        footer a {
+            color: white;
+        }
+        
+        footer ul {
+            padding: 0;
+        }
+        
+        h1 {
+            font-size: 3em;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+        }
+        
+        h4,
+        h5,
+        h6 {
+            font-size: 1.1em;
+        }
+        
+        img {
+            -webkit-user-drag: none;
+            user-select: none;
+        }
+        /*Main*/
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        .menu .logo {
+            width: 80px;
+        }
+        
+        footer {
+            background-color: gray;
+            width: 100%;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+        
+        footer .row {
+            width: 100vw;
+        }
+        /* ******************* GENERIC STYLE ******************** */
+        /* ====================================MOBILE SCREEN BELOW========================================*/
+        
+        @media screen and (max-width:766px) {
+            aside {
+                display: none;
+            }
+            .nav-link {
+                text-align: right;
+            }
+            .nav-item {
+                border-bottom: 1px solid #969296!important;
+            }
+            .nav-item:last-child {
+                border: none!important;
+            }
+            .Banner-Content .container-fluid {
+                bottom: 7vh!important;
+            }
+            .Banner-Content h1 {
+                font-size: 10vw;
+            }
+            .Banner-Content p {
+                display: none
+            }
+            footer div {
+                text-align: center;
+            }
+            footer div:first-child {
+                padding-top: 1em;
+            }
+            footer h3 {
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+            footer li {
+                margin-bottom: 10px;
+                overflow: visible;
+            }
+            footer div:last-child li {
+                padding-right: 1em;
+            }
+            footer ul {
+                padding-left: inherit;
+            }
+            .Banner-Content img {
+                height: 8em;
+            }
+            .Banner-Content h1 {
+                color: white;
+            }
+            h2 {
+                font-size: 5vw;
+            }
+            /* FORM */
+        }
+        /* ====================================MOBILE SCREEN BELOW========================================*/
+        /* !!!!!!!!!!!!!!!!!!!!!!! OLD STYLE.CSS VERSION !!!!!!!!!!!!!!!!!!!!!!!!! */
+        /* BANNER */
+        /* 
+.Banner-Content {
+    color: white;
+    overflow: hidden;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+header h1 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+header p {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+
+aside {
+    display: block;
+} */
+        /* OLD VERSION  OF NAVBAR*/
+        /*Laptop screen*/
+        /* Old Navbar
+@media screen and (min-width: 983px) {
+    /*Header
+    /*Menu
+    .menu {
+        background-color: aliceblue;
+        height: 80px;
+        padding-left: 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .Menulinks {
+        display: inline-block;
+        position: relative;
+        bottom: 30%;
+        border: 0.01cm ridge green;
+    }
+    .Menulinks li {
+        float: left;
+        margin-right: 50px;
+        text-align: left;
+    }
+    .Menulinks a {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000000;
+        border: 5px outset transparent;
+        border-radius: 10px 10px 0 0;
+        width: 150px;
+        transition: 0.5s border-color;
+        transition: 0.5s background-color;
+    }
+    .Menulinks li li a {
+        padding-left: 5px;
+        border-radius: 0 0 0 0;
+        background-color: white;
+        font-size: smaller;
+    }
+    .Menulinks li .submenu {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .Menulinks a:hover {
+        border-color: aliceblue;
+        background-color: rgb(11, 238, 162);
+    }
+    .Menulinks li:hover .submenu {
+        animation: submenu 0.2s linear;
+        display: block;
+        -webkit-animation: submenu 0.2s linear;
+    }
+     */
+        /* !!!!!!!!!!!!!!!!!!!!!!! OLD STYLE.CSS VERSION !!!!!!!!!!!!!!!!!!!!!!!!! */
+        /* NEW VERSION () */
+        /* ======================================LAPTOP ABOVE============================================= */
+        
+        @media all and (min-width:767px) {
+            /* .dropdown-menu {
+        /* position: absolute;
+        visibility: hidden;
+        top: 100%;
+        transform: translateY(1.0em);
+        z-index: -1;
+        opacity: 0;
+        transition: all .3s ease 0s, z-index 0s linear 0.01s, visibility 0s linear 0.3s;
+        -webkit-transition: all .3s ease 0s, z-index 0s linear 0.01s, visibility 0s linear 0.3s;
+        -moz-transition: all .3s ease 0s, z-index 0s linear 0.01s, visibility 0s linear 0.3s;
+        -ms-transition: all .3s ease 0s, z-index 0s linear 0.01s, visibility 0s linear 0.3s;
+        -o-transition: all .3s ease 0s, z-index 0s linear 0.01s, visibility 0s linear 0.3s;
+        -webkit-transform: translateY(1.0em);
+        -moz-transform: translateY(1.0em);
+        -ms-transform: translateY(1.0em);
+        -o-transform: translateY(1.0em); 
+    } */
+            /* .dropdown-menu {
+                transform: translateY(-100%);
+                opacity: 0;
+                -webkit-transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+                transition: all 1 ease;
+                -webkit-transition: all 1 ease;
+                -moz-transition: all 1 ease;
+                -ms-transition: all 1 ease;
+                -o-transition: all 1 ease;
+            } */
+            #menuNavbar_dropdown_2:hover~.dropdown-menu,
+            #menuNavbar_dropdown_2~.dropdown-menu:hover,
+            #menuNavbar_dropdown_1:hover~.dropdown-menu,
+            #menuNavbar_dropdown_1~.dropdown-menu:hover {
+                display: block;
+                animation: laptop_submenu .2s ease;
+                -webkit-animation: laptop_submenu .2s ease;
+            }
+            #menuNavbar_dropdown_1:active .dropdown-menu,
+            #menuNavbar_dropdown_2:active .dropdown-menu {
+                display: none;
+            }
+            .nav-item:nth-child(1) {
+                margin-left: 2em;
+            }
+            .nav-item {
+                margin-right: 2em;
+            }
+            .nav-item:nth-last-child() {
+                margin-right: 0;
+            }
+            /* footer */
+            /*footer*/
+            footer .container-fluid {
+                align-content: center;
+            }
+            footer div {
+                box-sizing: content-box;
+                padding-top: 1em;
+                text-align: center;
+            }
+            footer h3 {
+                margin-bottom: 10px;
+            }
+            footer li {
+                margin-bottom: 10px;
+                overflow: visible;
+            }
+            footer {
+                height: 35vh;
+            }
+            main {
+                float: left;
+                width: 70%;
+            }
+            .Banner-Content img {
+                height: 15em;
+            }
+            .Banner-Content h1 {
+                color: black;
+            }
+        }
+        
+        @media all and (min-width: 828px) {
+            .nav-item:nth-child(1) {
+                margin-left: 5em;
+            }
+            .nav-item {
+                margin-right: 5em;
+            }
+            .nav-item:nth-last-child() {
+                margin-right: 0;
+            }
+        }
+        /* ======================================LAPTOP ABOVE============================================= */
+        /* ================================== TABLET SCREEN MIDDLE AND MOBILE ================================ */
+        
+        @media all and (max-width: 992px) {
+            main {
+                width: 95%;
+                margin-left: 2.5%;
+            }
+            aside {
+                display: none;
+            }
+        }
+        /* ================================== TABLET SCREEN MIDDLE ================================ */
+        /* -------- BOOTSTRAP CUSTOM ----------*/
+        
+        button {
+            border: none;
+            background-color: #f5f5f5;
+        }
+        
+        .navbar-toggler.collapsed {
+            outline: none!important;
+            box-shadow: none!important;
+        }
+        
+        .dropdown-item {
+            border-bottom: 0.5px solid gray;
+        }
+        
+        .dropdown-item:nth-child(3) {
+            border-bottom: none;
+        }
+        
+        .dropdown-menu {
+            background-color: aliceblue;
+        }
+        
+        .dropdown-item {
+            font-weight: 600;
+        }
+        /* Menu Remake */
+        
+        .menu {
+            background-color: rgba(124, 255, 71, 0.4);
+        }
+        
+        .nav-item {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 3.5px;
+            transition: .5s font-weight;
+            transition: 0.5s background-color;
+            -webkit-transition: 0.5s background-color;
+            -moz-transition: 0.5s background-color;
+            -ms-transition: 0.5s background-color;
+            -o-transition: 0.5s background-color;
+            -webkit-border-radius: 3.5px;
+            -moz-border-radius: 3.5px;
+            -ms-border-radius: 3.5px;
+            -o-border-radius: 3.5px;
+        }
+        
+        .nav-item:hover {
+            font-weight: 600;
+            background-color: rgb(11, 238, 162);
+        }
+        
+        .Banner-Content {
+            position: relative!important;
+        }
+        
+        .Banner-Content .container-fluid {
+            position: absolute!important;
+        }
+        
+        .Banner-Content {
+            overflow: hidden;
+            color: white;
+        }
+        
+        .Banner-Content .container-fluid {
+            bottom: 2em;
+        }
+        
+        .Banner-Content img {
+            min-width: 100%;
+        }
+        
+        main img,
+        .Banner-Content img {
+            image-rendering: pixelated;
+            /* No apply for pitch-history image because it doesn't get better much*/
+            /* Blur isn't the same as broken right */
+        }
+        /* -------- BOOTSTRAP CUSTOM ----------*/

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Thuê sân bóng - Sân Bóng</title>
+    <!-- Bootstrap 5-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+
+
+
+
+    <!-- My file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="menu">
+
+            <nav class="navbar navbar-expand-md navbar-fixed-top  Menulinks">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand"> <img src="images/logo.png" alt="web icon" class="d-inline-block align-top logo"></a>
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" class="navbar-toggler" id="navbar-toggler" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="menuNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href='index.html' class="nav-link">Trang chủ</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">Giới thiệu</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+
+
+                                <a role="button" class="nav-link dropdown-toggle" href="#" id="menuNavbar_dropdown_1" data-bs-toggle="dropdown" aria-expanded="false">Đặt sân</a>
+
+                                <ul class="dropdown-menu submenu" aria-labelledby="menuNavbar_dropdown_1">
+                                    <li class="dropdown-item " onclick="location.href='book.html';return checkField( 'San1')"><a class="nav-link" href="book.html" onclick="return checkField( 'San1') ">Sân 1</a></li>
+                                    <li class="dropdown-item " onclick="location.href='book.html';return checkField( 'San2')"><a class="nav-link" href="book.html " onclick="return checkField( 'San2') ">Sân 2</a></li>
+                                    <li class="dropdown-item " onclick="location.href='book.html';return checkField( 'San3')"><a class="nav-link" href="book.html " onclick="return checkField( 'San3') ">Sân 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+
+
+                                <a href="#" class="nav-link dropdown-toggle" id="menuNavbar_dropdown_2" data-bs-toggle="dropdown" aria-expanded="false" role="button">Tìm sân</a>
+
+                                <ul class="dropdown-menu submenu" aria-labelledby="menuNavbar_dropdown_2">
+                                    <li class="dropdown-item " onclick="location.href='details-1.html' "><a class="nav-link" href="details-1.html ">Sân 1</a></li>
+                                    <li class="dropdown-item " onclick="location.href='details-2.html' "><a class="nav-link" href="details-2.html ">Sân 2</a></li>
+                                    <li class="dropdown-item " onclick="location.href='details-3.html' "><a class="nav-link" href="details-3.html ">Sân 3</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="Banner-Content">
+            <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banner.jpg " alt="website banner" class="banner img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/football_pitch_1.jpg" alt="website banner2" class="banner img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pitch-history.jpg" alt="website banner3" class="banner img-fluid" style="image-rendering: initial;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pitch2.jpg" alt="website banner4" class="banner img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image6.jpg" alt="website banner5" class="banner img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image7.jpg" alt="website banner6" class="banner img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid text-start">
+                <h1>Thuê sân bóng</h1>
+
+                <p class="text-wrap">Thuê sân bóng là ứng dụng kết nối chủ sân với những đội bóng.<br>Ứng dụng cung cấp các tiện ích thông minh giúp các đội bóng tìm được sân phù hợp nhất, đặt sân một cách hiệu quả nhất.<br>Hệ thống quản lý sân, lịch biểu thông minh giảm
+                    thiểu tối đa thời gian chi phí, tăng doanh thu cho chủ sân.</p>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>Các sân còn trống:</h2>
+            <ul>
+                <li>
+                    <a href="details-1.html">Sân bóng nhân tạo Trung Hòa</a>
+                </li>
+                <li>
+                    <a href="details-2.html">Sân bóng đá Làng sinh viên Hacinco</a>
+                </li>
+                <li>
+                    <a href="details-3.html">Sân bóng Minh Kiệt, Dương Nội</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3>THUÊ SÂN BÓNG</h3>
+                    <ul>
+                        <li>Liên hệ:
+                            <a href="mailto:thuesanbong@gmail.com ">thuesanbong@gmail.com</a>
+                        </li>
+                        <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100078980645993 ">Thuê sân bóng</a></li>
+                        <li>Zalo: <a href="tel:0912345678 ">0912345678</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <h3>THÔNG TIN</h3>
+                    <ul>
+                        <li><a href="index.html ">Trang chủ</a></li>
+                        <li><a href="about.html ">Giới thiệu</a></li>
+                        <li><a href="field.html ">Tìm sân</a>
+                        </li>
+                        <li>
+                            <a href="field_order.html ">Đặt sân</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
+    <script src="js/book.js"></script>
+    <script src="js/menu_dropdown.js "></script>
+</body>
+
+</html>

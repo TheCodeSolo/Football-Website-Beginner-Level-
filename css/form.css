@@ -1,0 +1,92 @@
+legend {
+    font-size: 6vw;
+}
+
+fieldset {
+    border: none !important;
+}
+
+form label {
+    font-weight: bold;
+    overflow: visible;
+    width: 100%;
+}
+
+input,
+select {
+    height: 20px;
+    width: 80% !important;
+}
+
+select {
+    height: initial;
+}
+
+.option-label {
+    display: flex;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    font-weight: lighter;
+    width: initial!important;
+}
+
+main span {
+    color: red;
+}
+
+label span {
+    color: gray;
+    font-weight: lighter;
+}
+
+.label-content {
+    font-weight: 500;
+    color: black;
+}
+
+form {
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-bottom: 20px;
+}
+
+.imgerror {
+    width: 20px;
+    display: flex;
+    filter: invert(22%) sepia(82%) saturate(6609%) hue-rotate(355deg) brightness(93%) contrast(119%);
+    -webkit-filter: invert(22%) sepia(82%) saturate(6609%) hue-rotate(355deg) brightness(93%) contrast(119%);
+}
+
+#Order_label {
+    width: initial;
+}
+
+#Order {
+    opacity: 100%;
+    width: 100px!important;
+    height: 35px;
+    font-weight: bold;
+    color: white;
+    background: radial-gradient(circle, rgba(6, 154, 28, 1) 0%, rgba(42, 224, 0, 1) 100%);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#Order:hover {
+    cursor: pointer;
+    background: radial-gradient(circle, rgba(5, 191, 33, 1) 0%, rgba(78, 231, 42, 1) 100%);
+}
+
+@media screen and (max-width:766px) {
+    input,
+    select {
+        width: 100%;
+    }
+}
